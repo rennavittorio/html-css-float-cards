@@ -1,0 +1,19 @@
+/* regole di reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+/* regola da assegnare alle float cards */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
