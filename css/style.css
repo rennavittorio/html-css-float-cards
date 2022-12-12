@@ -22,7 +22,7 @@ body {
     padding: 50px;
 }
 
-.col, .card {
+.col, .card, .card-img{
     border: 2px solid black;
     padding: 20px;
 }
@@ -33,5 +33,11 @@ body {
 }
 
 .card {
-    margin: 5px 0;
+    overflow: hidden;
+}
+
+/* dentro la card */
+.card-img {
+    width: 30%;
+    float: left;
 }
