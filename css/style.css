@@ -17,3 +17,21 @@ body {
     display: table;
     clear: both;
 }
+
+.page-header {
+    padding: 50px;
+}
+
+.col, .card {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.col {
+    float: left;
+    width: calc(100% / 3)
+}
+
+.card {
+    margin: 5px 0;
+}
