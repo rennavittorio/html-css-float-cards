@@ -8,7 +8,6 @@
 body {
     max-width: 900px;
     margin: 0 auto;
-    border: 2px solid black;
 }
 
 img {
@@ -28,8 +27,21 @@ h1, p {
     clear: both;
 }
 
+/* header */
 .page-header {
     padding: 50px;
+    text-align: center;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    color: pink;
+    padding-bottom: 50px;
+}
+
+.description {
+    font-size: 24px;
 }
 
 /* .col, .card, .card-img, .card-text{
@@ -52,12 +64,14 @@ h1, p {
     overflow: hidden;
     background-color: navy;
     margin: 20px 0;
+    box-shadow: 0 0 20px 1px lightgray;
 }
 
 /* dentro la card */
 .card-img {
     float: left;
     width: calc(100% / 3);
+    height: 50px;
 }
 
 .card-text {
