@@ -11,6 +11,16 @@ body {
     border: 2px solid black;
 }
 
+img {
+    max-width: 100%;
+}
+
+h1, p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 /* regola da assegnare alle float cards */
 .clearfix::after {
     content: "";
@@ -22,32 +32,51 @@ body {
     padding: 50px;
 }
 
-.col, .card, .card-img, .card-text{
+/* .col, .card, .card-img, .card-text{
     border: 2px solid black;
-    padding: 20px;
-}
+} */
 
 .col {
     float: left;
-    width: calc(100% / 3)
+    width: calc(100% / 3);
+    padding: 10px 10px 10px 0;
 }
+
+.row .col:last-child {
+    padding-right: 0;
+} 
+/* formattazione sballata */
+
 
 .card {
     overflow: hidden;
+    background-color: navy;
     margin: 20px 0;
-    padding: 0;
 }
 
 /* dentro la card */
 .card-img {
     float: left;
-    width: 30%;
+    width: calc(100% / 3);
 }
 
 .card-text {
     float: right;
     width: 60%;
-    padding: 0;
-    font-size: 12px;
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: 400;
+}
+
+.card-text p {
+    padding: 1px 0;
+    color: white;
+}
+
+.card-text .card-name {
+    font-weight: 700;
+}
+
+.card-text .card-mail {
+    color: aqua;
 }
