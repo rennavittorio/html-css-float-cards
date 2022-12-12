@@ -71,7 +71,9 @@ h1, p {
 .card-img {
     float: left;
     width: calc(100% / 3);
-    height: 50px;
+    height: 50px; 
+    /* poichè ho ragionato per colonne, devo assicurarmi
+    che le img fossero tutte stessa altezza */
 }
 
 .card-text {
