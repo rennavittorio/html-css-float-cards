@@ -18,8 +18,15 @@ img {
     margin: 0 auto;
 }
 
+/* sempre da usare quando si usa float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka', cursive;
 }
 
 .title {
@@ -59,4 +66,27 @@ rende riutilizzabile in codice */
     min-height: 90px;
     min-width: 50px;
     background-color: black;
+    color: white;
+}
+
+/* dentro la card */
+.team-card > * {
+    float: left;
+}
+
+.team-thumb {
+    width: 90px;
+}
+
+/* togie lo spazio sotto l'img, perchè occupa tutto lo spazio */
+.team-thumb img {
+    display: block;
+}
+
+.team-card > .team-info {
+    padding-left: 10px;
+}
+
+.team-info {
+    width: calc(100% - 90px);
 }
