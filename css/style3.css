@@ -1,0 +1,70 @@
+/* versione flex */
+
+/* reset rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+/* fine reset rules */
+
+/* header */
+.page-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.page-header .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: palevioletred;
+    padding: 20px 0;
+}
+/* fine header */
+
+/* layout cards */
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    background-color: yellow;
+    max-width: calc((100% - 40px) / 3);
+    max-height: 150px;
+}
+
+/* dentro card */
+.card {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: navy;
+    color: azure;
+}
+
+.mem-photo img {
+    display: block; /* è l'img che deve diventare blocco */
+}
+
+.mem-text {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    font-size: 12px;
+}
+/* fine dentro card */
