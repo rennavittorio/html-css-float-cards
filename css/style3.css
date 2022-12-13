@@ -33,7 +33,7 @@ img {
 }
 /* fine header */
 
-/* layout cards */
+/* layout cards section */
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -46,6 +46,8 @@ img {
     max-width: calc((100% - 40px) / 3);
     max-height: 150px;
 }
+/* fine layout cards section */
+
 
 /* dentro card */
 .card {
